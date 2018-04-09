@@ -13,13 +13,23 @@ public class CalculatorLogicTest {
         calc = new CalculatorLogic();
     }
     @org.junit.Test
-    public void testSumm() {
-        int sum = calc.sum(3, 4);
-        Assert.assertEquals(6, sum);
+    public void testSum() {
+        int sum = calc.add(3, 4);
+        Assert.assertEquals(7, sum);
     }
     @org.junit.Test
-    public void testSumm2() {
-        int sum = calc.sum(-1, 4);
-        Assert.assertEquals(3, sum);
+    public void testDivide() {
+        int div = calc.div(10, 5);
+        Assert.assertEquals(2, div);
+    }
+    @org.junit.Test
+    public void testMultiply() {
+        int mult = calc.mult(4, 4);
+        Assert.assertEquals(8, mult);
+    }
+    @org.junit.Test
+    public void testSubstract() {
+        int sub = calc.sub(12, 2);
+        Assert.assertEquals(8, sub);
     }
 }
